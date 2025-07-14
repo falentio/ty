@@ -15,6 +15,6 @@
   "exports": {
     ".": "./mod.ts"
   },
-  "name": "@ty/ty",
+  "name": "@falentio/ty",
   "version": "0.0.1"
 }
