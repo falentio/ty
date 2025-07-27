@@ -1,0 +1,14 @@
+# Lefthook configuration for Deno project
+# Runs type checking on pre-commit and tests on pre-push
+
+pre-commit:
+    commands:
+        type-check:
+            run: deno check **/*.ts
+            fail_text: "Type checking failed. Please fix TypeScript errors before committing."
+
+pre-push:
+    commands:
+        test:
+            run: deno test --allow-all
+            fail_text: "Tests failed. Please ensure all tests pass before pushing."
